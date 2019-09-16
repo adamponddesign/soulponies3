@@ -1,0 +1,49 @@
+
+
+
+#burger {
+  position: absolute;
+  // left: 0px;
+  // top: 0px;
+  z-index: 300; /* Stay on top */
+}
+
+
+
+
+
+
+//* Hamburger Bar Color
+.ecXcNV,
+.ecXcNV::after,
+.ecXcNV::before {
+  background-color: black;
+}
+
+.dxyFwX,
+.dxyFwX::after,
+.dxyFwX::before {
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* if you are above 1025px then this will happen */
+@media (min-width: 1025px) {
+  #burger {
+  display: none;
+  }
+}

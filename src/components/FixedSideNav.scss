@@ -1,0 +1,46 @@
+/* The sidebar menu */
+.fixed-side-nav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 320px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 100; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  // padding-top: 20px;
+}
+
+/* The navigation menu links */
+.fixed-side-nav a {
+  padding: 6px 8px 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: white;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.fixed-side-nav a:hover {
+  color: orange;
+}
+
+
+
+#fixed-nav-logo {
+  fill: white;
+  margin: 50px;
+}
+
+
+
+
+// MEDIA QUERIES ////////////////////////////////////////////////////////////////////////////
+
+/* if you are below 1024px then this will happen */
+@media (max-width: 1024px) {
+  .fixed-side-nav {
+  display: none;
+  }
+}

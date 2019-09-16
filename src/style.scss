@@ -1,0 +1,27 @@
+/* Style page content */
+main {
+  margin-right: 320px; /* Same as the width of the sidebar */
+}
+
+
+
+section {
+  padding: 4rem 0.8rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* if you are below 1024px then this will happen */
+@media (max-width: 1024px) {
+  main {
+    margin-right: 0; /* Same as the width of the sidebar */
+  }
+}
