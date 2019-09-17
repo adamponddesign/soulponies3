@@ -1,4 +1,19 @@
-/* Style page content */
+@import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
+
+
+$color1: #ff9900;
+
+
+* {
+  font-family: 'Shrikhand', cursive;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+
 main {
   margin-right: 320px; /* Same as the width of the sidebar */
 }
@@ -7,7 +22,6 @@ main {
 
 section {
   padding: 4rem 0.8rem;
-
 }
 
 

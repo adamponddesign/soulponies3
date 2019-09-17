@@ -1,3 +1,5 @@
+$color1: #ff9900;
+
 /* The sidebar menu */
 .fixed-side-nav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -29,8 +31,14 @@
 
 
 #fixed-nav-logo {
-  fill: white;
-  margin: 50px;
+  padding: 50px;
+  background-color: $color1;
+  max-width: 320px;
+}
+
+.social-icons {
+  color: white;
+  font-size: 3rem;
 }
 
 

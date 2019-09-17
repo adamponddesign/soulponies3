@@ -1,6 +1,6 @@
 .mobile-nav {
   height: 100%;
-  background: rgba(black, 0.85);
+  background: rgba(black, 0.9);
   position: fixed;
   top: 0;
   right: 0;
@@ -43,6 +43,10 @@
 /* if you are above 1025px then this will happen */
 @media (min-width: 1025px) {
   .mobile-nav {
+  display: none;
+  }
+
+  .mobile-nav.open {
   display: none;
   }
 }
