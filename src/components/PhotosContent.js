@@ -4,40 +4,40 @@
 export const photos1 =
 [
   {
-    large: 'https://www.w3schools.com/w3images/wedding.jpg',
-    small: 'https://www.w3schools.com/w3images/wedding.jpg',
+    large: 'https://i.imgur.com/1mVHu4A.jpg',
+    small: 'https://i.imgur.com/1mVHu4A.jpg',
     id: '1'
 
   },
   {
-    large: 'https://www.w3schools.com/w3images/rocks.jpg',
-    small: 'https://www.w3schools.com/w3images/rocks.jpg',
+    large: 'https://i.imgur.com/aBR6FV2.jpg',
+    small: 'https://i.imgur.com/aBR6FV2.jpg',
     id: '2'
 
   },
   {
-    large: 'https://www.w3schools.com/w3images/falls2.jpg',
-    small: 'https://www.w3schools.com/w3images/falls2.jpg',
+    large: 'https://i.imgur.com/f0OfK5D.jpg',
+    small: 'https://i.imgur.com/f0OfK5D.jpg',
     id: '3'
   },
   {
-    large: 'https://www.w3schools.com/w3images/paris.jpg',
-    small: 'https://www.w3schools.com/w3images/paris.jpg',
+    large: 'https://i.imgur.com/YuL7H0C.jpg',
+    small: 'https://i.imgur.com/YuL7H0C.jpg',
     id: '4'
   },
   {
-    large: 'https://www.w3schools.com/w3images/nature.jpg',
-    small: 'https://www.w3schools.com/w3images/nature.jpg',
+    large: 'https://i.imgur.com/isj7fsf.jpg',
+    small: 'https://i.imgur.com/isj7fsf.jpg',
     id: '5'
   },
   {
-    large: 'https://www.w3schools.com/w3images/mist.jpg',
-    small: 'https://www.w3schools.com/w3images/mist.jpg',
+    large: 'https://i.imgur.com/ReYocdI.jpg',
+    small: 'https://i.imgur.com/ReYocdI.jpg',
     id: '6'
   },
   {
-    large: 'https://www.w3schools.com/w3images/paris.jpg',
-    small: 'https://www.w3schools.com/w3images/paris.jpg',
+    large: 'https://i.imgur.com/WE5MyFE.jpg',
+    small: 'https://i.imgur.com/WE5MyFE.jpg',
     id: '7'
   }
 ]
@@ -46,30 +46,30 @@ export const photos1 =
 export const photos2 =
 [
   {
-    large: 'https://www.w3schools.com/w3images/underwater.jpg',
-    small: 'https://www.w3schools.com/w3images/underwater.jpg',
+    large: 'https://i.imgur.com/6vWd1Mb.jpg',
+    small: 'https://i.imgur.com/6vWd1Mb.jpg',
     id: '8'
 
   },
   {
-    large: 'https://www.w3schools.com/w3images/ocean.jpg',
-    small: 'https://www.w3schools.com/w3images/ocean.jpg',
+    large: 'https://i.imgur.com/WsIa0Qq.jpg',
+    small: 'https://i.imgur.com/WsIa0Qq.jpg',
     id: '9'
 
   },
   {
-    large: 'https://www.w3schools.com/w3images/wedding.jpg',
-    small: 'https://www.w3schools.com/w3images/wedding.jpg',
+    large: 'https://i.imgur.com/uMNYBar.jpg',
+    small: 'https://i.imgur.com/uMNYBar.jpg',
     id: '10'
   },
   {
-    large: 'https://www.w3schools.com/w3images/mountainskies.jpg',
-    small: 'https://www.w3schools.com/w3images/mountainskies.jpg',
+    large: 'https://i.imgur.com/iACq847.jpg',
+    small: 'https://i.imgur.com/iACq847.jpg',
     id: '11'
   },
   {
-    large: 'https://www.w3schools.com/w3images/rocks.jpg',
-    small: 'https://www.w3schools.com/w3images/rocks.jpg',
+    large: 'https://i.imgur.com/9NqAg1V.jpg',
+    small: 'https://i.imgur.com/9NqAg1V.jpg',
     id: '12'
   },
   {

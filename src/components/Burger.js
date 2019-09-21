@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import { HamburgerCollapse } from 'react-animated-burgers'
+import { HamburgerSqueeze } from 'react-animated-burgers'
 import './Burger.scss'
 
 const Burger = props => {
@@ -10,7 +10,8 @@ const Burger = props => {
 
   return (
 
-    <HamburgerCollapse id="burger" isActive={props.status} toggleButton={props.toggleSideBar} />
+
+    <HamburgerSqueeze barColor="white" id="burger" isActive={props.status} toggleButton={props.toggleSideBar} />
 
 
   )

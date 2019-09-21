@@ -2,22 +2,25 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Favicon from 'react-favicon'
+
 import FixedSideNav from './components/FixedSideNav'
 import LandingPage from './components/LandingPage'
 import Contact from './components/Contact'
 import MobileNav from './components/MobileNav'
-import Burger from './components/Burger'
+
 import Videos from './components/Videos'
 import Photos from './components/Photos'
 import About from './components/About'
+import MobileNavBar from './components/MobileNavBar'
 
 import './style.scss'
 
 class App extends React.Component {
 
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
+    width: 0,
+    height: 0
   }
 
   drawerToggleClickHandler = () => {
@@ -26,15 +29,37 @@ class App extends React.Component {
     })
   }
 
+  componentDidMount = () => {
+    this.updateWindowDimensions()
+    window.addEventListener('resize', this.updateWindowDimensions)
+  }
+
+  componentWillUnmount = () => {
+    window.removeEventListener('resize', this.updateWindowDimensions)
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({ width: window.innerWidth, height: window.innerHeight })
+    if (this.state.width >= 1025) {
+      this.setState({ sideDrawerOpen: false })
+    }
+  }
+
+
+
 
 
   render() {
+  
+
     return (
       <Router>
         <main>
-          <Burger toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
+
+          <MobileNavBar toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
           <FixedSideNav />
-          <MobileNav toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
+
+          <MobileNav  pageWidth={this.state.width} toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
 
 
 
@@ -61,9 +86,6 @@ class App extends React.Component {
 }
 
 ReactDOM.render(
-  <div>
-    <Favicon url="https://i.imgur.com/SAyCCAz.png" />
-    <App />
-  </div>,
+  <App />,
   document.getElementById('root')
 )

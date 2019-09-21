@@ -1,16 +1,22 @@
+
+$color1: #ff9900;
+
+
 @import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
 
 
-$color1: #ff9900;
 
 
 * {
   font-family: 'Shrikhand', cursive;
   box-sizing: border-box;
+  margin:0;
+  padding: 0;
 }
 
 h1, h2, h3 {
   text-align: center;
+  font-size: 2rem;
 }
 
 
@@ -21,13 +27,8 @@ main {
 
 
 section {
-  padding: 4rem 0.8rem;
+  padding: 1rem 0.8rem;
 }
-
-
-
-
-
 
 
 
@@ -37,5 +38,39 @@ section {
 @media (max-width: 1024px) {
   main {
     margin-right: 0; /* Same as the width of the sidebar */
+    padding-top: 7.3rem;
+  }
+  #burger {
+    top:35px;
+  }
+}
+
+
+
+
+
+
+
+// between 601px and 800px (ipads)
+@media (max-width: 800px) {
+  main {
+    padding-top: 5.5rem;
+  }
+  #burger {
+    top:22px;
+  }
+
+}
+
+// 600px and below (phones)
+@media (max-width: 600px) {
+  main {
+    padding-top: 3.2rem;
+  }
+  #burger {
+    top:4px;
+  }
+  svg#mobile-nav-logo {
+    max-width: 16rem;
   }
 }

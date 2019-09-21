@@ -8,7 +8,7 @@ class Photos extends React.Component {
   render () {
     return (
       <section>
-        <h2>Photos</h2>
+        <h2>PHOTOS</h2>
 
         <div className="row">
           <div className="column">
