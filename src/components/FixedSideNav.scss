@@ -15,12 +15,7 @@ $color1: #ff9900;
 
 /* The navigation menu links */
 .fixed-side-nav a {
-  padding: 6px 8px 6px 16px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.7rem;
-  color: white;
-  display: block;
+
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -35,8 +30,17 @@ $color1: #ff9900;
   background-color: $color1;
   max-width: 320px;
   margin-bottom: 20px;
+
 }
 
+.links-container a {
+  padding: 6px 8px 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 27px;
+  color: white;
+  display: block;
+}
 
 
 

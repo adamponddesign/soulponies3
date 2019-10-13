@@ -3,7 +3,7 @@ $color1: #ff9900;
 
 
 @import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 
 
@@ -14,27 +14,49 @@ $color1: #ff9900;
   padding: 0;
 }
 
+
+
 h1, h2, h3 {
   text-align: center;
-  font-size: 2rem;
+}
+
+h2 {
+  padding: 10px 0;
+  font-size: 27px;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
 }
 
 
 main {
   margin-right: 320px; /* Same as the width of the sidebar */
-}
-
-
-
-section {
-  padding: 1rem 0.8rem;
+  height: 100%;
 }
 
 
 
 
 
-/* if you are below 1024px then this will happen */
+
+.container {
+  margin: 20px;
+
+}
+
+
+
+
+
+// MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+
+/* Below 1024px */
 @media (max-width: 1024px) {
   main {
     margin-right: 0; /* Same as the width of the sidebar */
@@ -43,11 +65,12 @@ section {
   #burger {
     top:35px;
   }
+
+  .page-wrapper {
+    margin-top: 9px;
+  }
+
 }
-
-
-
-
 
 
 
@@ -60,17 +83,53 @@ section {
     top:22px;
   }
 
+  .page-wrapper {
+    margin-top: 10px;
+  }
+
+
 }
 
-// 600px and below (phones)
+// between 321px and 600px (mid - phones)
 @media (max-width: 600px) {
+  main {
+    padding-top: 3.2rem;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+
+
+  #burger {
+    top:4px;
+  }
+
+  .page-wrapper {
+    margin-top: 11px;
+  }
+
+}
+
+
+// 320px and below (small - phones)
+@media (max-width: 320px) {
   main {
     padding-top: 3.2rem;
   }
   #burger {
     top:4px;
   }
-  svg#mobile-nav-logo {
-    max-width: 16rem;
+
+  p {
+    font-size: 17px;
   }
+
+  h2 {
+    font-size: 23px;
+  }
+
+
+
 }

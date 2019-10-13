@@ -73,8 +73,50 @@ export const photos2 =
     id: '12'
   },
   {
-    large: 'https://www.w3schools.com/w3images/underwater.jpg',
-    small: 'https://www.w3schools.com/w3images/underwater.jpg',
+    large: 'https://i.imgur.com/sToauj2.jpg',
+    small: 'https://i.imgur.com/sToauj2.jpg',
     id: '13'
+  }
+]
+
+
+export const photos3 =
+[
+  {
+    large: 'https://i.imgur.com/2gxINFh.jpg',
+    small: 'https://i.imgur.com/2gxINFh.jpg',
+    id: '14'
+
+  },
+  {
+    large: 'https://i.imgur.com/isj7fsf.jpg',
+    small: 'https://i.imgur.com/isj7fsf.jpg',
+    id: '15'
+
+  },
+  {
+    large: 'https://i.imgur.com/1mVHu4A.jpg',
+    small: 'https://i.imgur.com/1mVHu4A.jpg',
+    id: '16'
+  },
+  {
+    large: 'https://i.imgur.com/YuL7H0C.jpg',
+    small: 'https://i.imgur.com/YuL7H0C.jpg',
+    id: '17'
+  },
+  {
+    large: 'https://i.imgur.com/ReYocdI.jpg',
+    small: 'https://i.imgur.com/ReYocdI.jpg',
+    id: '18'
+  },
+  {
+    large: 'https://i.imgur.com/aBR6FV2.jpg',
+    small: 'https://i.imgur.com/aBR6FV2.jpg',
+    id: '19'
+  },
+  {
+    large: 'https://i.imgur.com/uMNYBar.jpg',
+    small: 'https://i.imgur.com/uMNYBar.jpg',
+    id: '20'
   }
 ]

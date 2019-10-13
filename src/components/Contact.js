@@ -3,11 +3,13 @@ import './Contact.scss'
 
 const Contact = () => {
   return (
-    <section>
+    <div className='page-wrapper'>
       <h2>Contact</h2>
-      <p>Contact the soul ponies via email</p>
-      <p>info@soulponies.co.uk</p>
-    </section>
+      <div className='container'>
+        <p>For bookings and availability please contact</p>
+        <p>info@soulponies.co.uk</p>
+      </div>
+    </div>
   )
 }
 

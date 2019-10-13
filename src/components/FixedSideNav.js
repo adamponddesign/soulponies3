@@ -9,13 +9,13 @@ import './FixedSideNav.scss'
 const FixedSideNav = () => {
   return (
     <nav className="fixed-side-nav">
-      <SVG id='fixed-nav-logo' src={Logo} />
+      <Link to='/'><SVG id='fixed-nav-logo' src={Logo} /></Link>
       <div className='links-container'>
-        <Link to='/about'>About</Link>
         <Link to='/videos'>Videos</Link>
         <Link to='/photos'>Photos</Link>
-        <Link to='/contact'>Contact</Link>
         <a href='https://www.instagram.com/soulponiesmusic/' target='_blank' rel='noopener noreferrer'>Instagram</a>
+        <Link to='/Testimonials'>Testimonials</Link>
+        <Link to='/contact'>Contact</Link>
       </div>
 
     </nav>

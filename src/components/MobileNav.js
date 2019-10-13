@@ -1,8 +1,8 @@
 import React from 'react'
 
-import {Link, withRouter} from 'react-router-dom'
 import Logo from '../img/logo.svg'
 import SVG from 'react-inlinesvg'
+import {Link, withRouter} from 'react-router-dom'
 
 import './MobileNav.scss'
 
@@ -17,13 +17,13 @@ const MobileNav = props => {
 
   return (
     <div className={drawerClasses}>
-      <SVG id='mobile-nav-logo' src={Logo} />
+      <Link to='/' onClick={props.toggleSideBar}><SVG id='mobile-nav-logo' src={Logo} /></Link>
       <nav >
-        <Link to='/about' onClick={props.toggleSideBar}>About</Link>
         <Link to='/videos' onClick={props.toggleSideBar}>Videos</Link>
         <Link to='/photos' onClick={props.toggleSideBar}>Photos</Link>
-        <Link to='/contact' onClick={props.toggleSideBar}>Contact</Link>
         <a href='https://www.instagram.com/soulponiesmusic/' target='_blank' rel='noopener noreferrer'>Instagram</a>
+        <Link to='/testimonials' onClick={props.toggleSideBar}>Testimonials</Link>
+        <Link to='/contact' onClick={props.toggleSideBar}>Contact</Link>
       </nav>
     </div>
   )

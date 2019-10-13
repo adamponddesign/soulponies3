@@ -10,7 +10,7 @@ import MobileNav from './components/MobileNav'
 
 import Videos from './components/Videos'
 import Photos from './components/Photos'
-import About from './components/About'
+import Testimonials from './components/Testimonials'
 import MobileNavBar from './components/MobileNavBar'
 
 import './style.scss'
@@ -50,7 +50,7 @@ class App extends React.Component {
 
 
   render() {
-  
+
 
     return (
       <Router>
@@ -61,20 +61,12 @@ class App extends React.Component {
 
           <MobileNav  pageWidth={this.state.width} toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
 
-
-
-
-
-
-
-
-
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route path="/contact" component={Contact} />
             <Route path="/videos" component={Videos} />
             <Route path="/photos" component={Photos} />
-            <Route path="/about" component={About} />
+            <Route path="/testimonials" component={Testimonials} />
 
 
           </Switch>
