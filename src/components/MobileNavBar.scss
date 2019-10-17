@@ -39,6 +39,12 @@ $color1: #ff9900;
 
 // 600px and below (phones)
 @media (max-width: 600px) {
+  #mobile-navbar-logo {
+    max-width: 125px;
+  }
 
+  .navbar-background {
+    height: 75px;
+  }
 
 }

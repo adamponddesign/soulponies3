@@ -2,7 +2,7 @@ $color1: #ff9900;
 
 .mobile-nav {
   height: 100%;
-  background: rgba(black, 0.8);
+  background: rgba(black, 0.9);
   position: fixed;
   top: 0;
   right: 0;
@@ -58,6 +58,10 @@ svg#mobile-nav-logo {
 
 /* if you are below 1024px then this will happen */
 @media (max-width: 1024px) {
+  svg#mobile-nav-logo {
+    max-width: 193px;
+    padding: 0;
+  }
 }
 
 

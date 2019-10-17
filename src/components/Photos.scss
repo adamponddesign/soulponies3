@@ -23,13 +23,13 @@
 
 /* Responsive layout - makes a two column-layout instead of three columns */
 // between 601px and 800px
-@media (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
+// @media (max-width: 800px) {
+//   .column {
+//     -ms-flex: 50%;
+//     flex: 50%;
+//     max-width: 50%;
+//   }
+// }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 // 600px and below
