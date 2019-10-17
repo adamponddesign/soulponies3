@@ -1,50 +1,44 @@
 $color1: #ff9900;
 
-.mobile-nav-bar {
-  background-color: $color1;
-  height: 7.9rem;
-  width: 100vw;
-  position: fixed;
-  top: 0;
 
-  & SVG {
-    background-color: $color1;
-    padding: 9px;
-    position: fixed;
-    right: 0;
-    max-width: 13rem;
-    top:0;
-  }
+// block nav background
+.nav-burger-background {
+
 }
 
+.navbar-background {
+  background-color: $color1;
+  text-align: center;
+  height: 112px;
+}
 
+#mobile-navbar-logo {
+  max-width: 185px;
+  background-color: $color1;
+  padding: 9px;
+  top: 0px;
+  z-index: 100;
+}
 
 
 /* if you are above 1025px then this will happen */
 @media (min-width: 1025px) {
-  .mobile-nav-bar {
-  display: none;
-  }
+ .navbar-background {
+   display: none;
+ }
+ #mobile-navbar-logo {
+   display: none;
+ }
 }
 
 // between 601px and 800px (ipads)
 @media (max-width: 800px) {
-  .mobile-nav-bar {
-    height: 6.1rem;
-    & SVG {
-      max-width: 10rem;
-    }
-  }
+
 }
 
 
 // 600px and below (phones)
 @media (max-width: 600px) {
 
-  .mobile-nav-bar {
-    height: 3.9rem;
-    & SVG {
-      max-width: 6rem;
-    }
-  }
+
 }

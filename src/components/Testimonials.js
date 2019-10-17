@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonials = () => {
   return (
-    <div className='page-wrapper'>
+    <div id='testimonials'>
       <h2>Testimonials</h2>
       <div className='container'>
         <p>A paragraph about the band, A paragraph about the band,  A paragraph about the band, A paragraph about the band, A paragraph about the band, A paragraph about the band, A paragraph about the band, A paragraph about the band, A paragraph about the band, A paragraph about the band, A paragraph about the band, A paragraph about the </p>

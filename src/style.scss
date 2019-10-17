@@ -23,8 +23,20 @@ h1, h2, h3 {
 h2 {
   padding: 10px 0;
   font-size: 27px;
-  border-top: 4px solid black;
-  border-bottom: 4px solid black;
+  border-top: 4px solid $color1;
+  border-bottom: 4px solid $color1;
+  background-color: black;
+  color: white;
+}
+
+ul li {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
 }
 
 
@@ -32,6 +44,7 @@ h2 {
 p {
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
+  text-align: center;
 }
 
 
@@ -60,54 +73,20 @@ main {
 @media (max-width: 1024px) {
   main {
     margin-right: 0; /* Same as the width of the sidebar */
-    padding-top: 7.3rem;
   }
-  #burger {
-    top:35px;
-  }
-
-  .page-wrapper {
-    margin-top: 9px;
-  }
-
 }
 
 
 
 // between 601px and 800px (ipads)
 @media (max-width: 800px) {
-  main {
-    padding-top: 5.5rem;
-  }
-  #burger {
-    top:22px;
-  }
-
-  .page-wrapper {
-    margin-top: 10px;
-  }
-
 
 }
 
 // between 321px and 600px (mid - phones)
 @media (max-width: 600px) {
-  main {
-    padding-top: 3.2rem;
-  }
-
   h2 {
     font-size: 25px;
-  }
-
-
-
-  #burger {
-    top:4px;
-  }
-
-  .page-wrapper {
-    margin-top: 11px;
   }
 
 }
@@ -115,12 +94,6 @@ main {
 
 // 320px and below (small - phones)
 @media (max-width: 320px) {
-  main {
-    padding-top: 3.2rem;
-  }
-  #burger {
-    top:4px;
-  }
 
   p {
     font-size: 17px;
@@ -129,7 +102,6 @@ main {
   h2 {
     font-size: 23px;
   }
-
 
 
 }

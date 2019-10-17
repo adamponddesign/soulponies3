@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router} from 'react-router-dom'
 
 
 import FixedSideNav from './components/FixedSideNav'
 import LandingPage from './components/LandingPage'
 import Contact from './components/Contact'
 import MobileNav from './components/MobileNav'
+import About from './components/About'
 
 import Videos from './components/Videos'
 import Photos from './components/Photos'
@@ -48,7 +49,6 @@ class App extends React.Component {
 
 
 
-
   render() {
 
 
@@ -61,15 +61,20 @@ class App extends React.Component {
 
           <MobileNav  pageWidth={this.state.width} toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
 
-          <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/videos" component={Videos} />
-            <Route path="/photos" component={Photos} />
-            <Route path="/testimonials" component={Testimonials} />
+          <div>
 
 
-          </Switch>
+
+
+            <LandingPage />
+            <About />
+            <Testimonials width={this.state.width}/>
+            <Videos width={this.state.width}/>
+            <Photos width={this.state.width}/>
+            <Contact width={this.state.width}/>
+
+
+          </div>
 
         </main>
       </Router>

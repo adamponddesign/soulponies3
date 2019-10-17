@@ -2,7 +2,7 @@ import React from 'react'
 
 import Logo from '../img/logo.svg'
 import SVG from 'react-inlinesvg'
-import {Link, withRouter} from 'react-router-dom'
+// import {Link, withRouter} from 'react-router-dom'
 
 import './MobileNav.scss'
 
@@ -17,16 +17,17 @@ const MobileNav = props => {
 
   return (
     <div className={drawerClasses}>
-      <Link to='/' onClick={props.toggleSideBar}><SVG id='mobile-nav-logo' src={Logo} /></Link>
+      <a href='#/' onClick={props.toggleSideBar}><SVG id='mobile-nav-logo' src={Logo} /></a>
       <nav >
-        <Link to='/videos' onClick={props.toggleSideBar}>Videos</Link>
-        <Link to='/photos' onClick={props.toggleSideBar}>Photos</Link>
+        <a href='#about' onClick={props.toggleSideBar}>About</a>
+        <a href='#testimonials' onClick={props.toggleSideBar}>Testimonials</a>
+        <a href='#videos' onClick={props.toggleSideBar}>Videos</a>
+        <a href='#photos' onClick={props.toggleSideBar}>Photos</a>
         <a href='https://www.instagram.com/soulponiesmusic/' target='_blank' rel='noopener noreferrer'>Instagram</a>
-        <Link to='/testimonials' onClick={props.toggleSideBar}>Testimonials</Link>
-        <Link to='/contact' onClick={props.toggleSideBar}>Contact</Link>
+        <a href='#contact' onClick={props.toggleSideBar}>Booking Info</a>
       </nav>
     </div>
   )
 }
 
-export default withRouter(MobileNav)
+export default MobileNav

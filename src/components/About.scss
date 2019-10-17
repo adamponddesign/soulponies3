@@ -1,0 +1,17 @@
+.venues-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+
+
+}
+
+.venues {
+  padding: 10px;
+  min-width: 100px;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}

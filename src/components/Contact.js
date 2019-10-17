@@ -3,11 +3,19 @@ import './Contact.scss'
 
 const Contact = () => {
   return (
-    <div className='page-wrapper'>
-      <h2>Contact</h2>
+    <div id='contact'>
+      <h2>Booking Info</h2>
       <div className='container'>
-        <p>For bookings and availability please contact</p>
-        <p>info@soulponies.co.uk</p>
+        <p>Soul Ponies are based in central London but travel worldwide.<br />They are available to book in the following line ups</p>
+        <hr />
+        <ul>
+          <li>Duo - Keys+Vocals / Drums</li>
+          <li>Trio - Keys+Vocals / Bass / Drums</li>
+          <li>Quartet - Keys+Vocals / Bass / Guitar / Drums</li>
+        </ul>
+        <hr />
+        <p>For more information and availability please contact</p>
+        <p id='email-address'>info@soulponies.co.uk</p>
       </div>
     </div>
   )

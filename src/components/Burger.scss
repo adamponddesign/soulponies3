@@ -3,34 +3,54 @@ $color1: #ff9900;
 
 #burger {
   position: fixed;
-  left: 0px;
-  top: 0px;
+  right: 0px;
+  bottom: 0px;
   z-index: 300; /* Stay on top */
   cursor: pointer;
 }
 
 
-span.sc-htpNat.sc-ckVGcZ.iYdley,
-span.sc-htpNat.sc-ckVGcZ.iYdley::after,
-span.sc-htpNat.sc-ckVGcZ.iYdley::before {
+// burger background
+.bLyUej {
+  background-color: $color1;
+}
+
+// burger lines - nav closed ~~~~~~~~~~~~~~
+.iYdley  {
   background-color: black;
-  padding-top: 0;
 }
-
-
-button#burger.sc-bdVaJa.dyZyNG:focus {
-  outline: none;
+.iYdley::before {
+  background-color: black;
 }
-button#burger.sc-bdVaJa.bLyUej {
-  outline: none;
-
+.iYdley::after {
+  background-color: black;
 }
-
-div.sc-bwzfXH.iPxwRk {
-  padding-top: 20px;
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// burger lines - nav open (cross)
+.dZZdsc {
+  background-color: black;
 }
+.dZZdsc::before {
+  background-color: black;
+}
+.dZZdsc::after {
+  background-color: black;
+}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+
+
+
+
+
+
+
+
+.iPxwRk {
+  display: inherit;
+  height: 32px;
+}
 
 
 
