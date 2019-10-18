@@ -66,7 +66,7 @@ class App extends React.Component {
 
 
 
-            <LandingPage toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
+            <LandingPage pageWidth={this.state.width} toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
             <About />
             <Testimonials width={this.state.width}/>
             <Videos width={this.state.width}/>

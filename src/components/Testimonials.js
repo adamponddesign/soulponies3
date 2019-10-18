@@ -30,7 +30,7 @@ const Testimonials = () => {
           <div className='testimonial'>
             <p className='testimonial-text'>So many of our guests said you were the best live band they&#39;d ever heard</p>
             <p className='testimonial-text-name'>Chloe & Ben</p>
-            <p className='testimonial-text-venue'>Archerfields</p>
+            <p className='testimonial-text-venue'>Archerfield House</p>
             <p className='testimonial-text-date'>Dec 18</p>
             <div className='stars'>
               <FontAwesomeIcon icon={faStar} />
