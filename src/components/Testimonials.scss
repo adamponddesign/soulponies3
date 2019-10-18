@@ -1,0 +1,78 @@
+$color1: #ff9900;
+
+
+#testimonials {
+  background-color: $color1;
+}
+
+
+.testimonials-row {
+  display: flex;
+  flex-wrap: wrap;
+  // padding: 4px 4px;
+
+
+}
+
+/* Create four equal columns that sits next to each other */
+.testimonials-column {
+  flex: 50%;
+  max-width: 50%;
+  // padding: 4px 4px;
+
+}
+
+.testimonial {
+  color: black;
+  margin: 7px;
+  padding: 20px;
+  background-color: white;
+  border: 3px solid black;
+  // border-radius: 20px;
+}
+
+.testimonial-text {
+  padding: 8px 8px 15px 8px;
+}
+.testimonial-text-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+.testimonial-text-venue {
+  font-size: 15px;
+}
+.testimonial-text-date {
+  font-size: 15px;
+}
+
+
+
+
+.stars {
+  // font-size: 25px;
+  text-align: center;
+  padding-top: 15px;
+  color: black;
+}
+
+.stars SVG {
+  padding: 6px;
+  font-size: 30px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .testimonials-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .testimonials-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
