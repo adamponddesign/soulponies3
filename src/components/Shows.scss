@@ -1,0 +1,63 @@
+table#dates-table {
+  width: 100%;
+
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+
+}
+
+th, td {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+
+}
+
+th {
+  background-color: #ff9900;
+}
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/* Below 1024px */
+@media (max-width: 1024px) {
+
+}
+
+
+// between 601px and 800px (ipads)
+@media (max-width: 800px) {
+
+}
+
+// between 321px and 600px (mid - phones)
+@media (max-width: 600px) {
+
+  th, td {
+    padding: 7px;
+  }
+
+  #table-container {
+    margin: 0;
+  }
+
+}
+
+
+// 320px and below (small - phones)
+@media (max-width: 320px) {
+  th, td {
+    padding: 2px;
+  }
+
+  #table-container {
+    margin: 0;
+  }
+
+}

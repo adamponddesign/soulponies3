@@ -59,7 +59,7 @@ svg#mobile-nav-logo {
 /* if you are below 1024px then this will happen */
 @media (max-width: 1024px) {
   svg#mobile-nav-logo {
-    max-width: 193px;
+    max-width: 160px;
     padding: 0;
   }
 }
@@ -68,18 +68,24 @@ svg#mobile-nav-logo {
 
 // between 601px and 800px (ipads)
 @media (max-width: 800px) {
+  .mobile-nav a {
+    padding: 2px 0px;
+    font-size: 20px;
+
+  }
 }
 
 // between 321px and 600px (phones)
 @media (max-width: 600px) {
   svg#mobile-nav-logo {
-    max-width: 12rem;
+    max-width: 130px;
     padding: 0rem;
     margin-bottom: 1rem;
   }
 
   .mobile-nav a {
     padding: 2px 0px;
+    font-size: 20px;
 
   }
 }
@@ -88,7 +94,7 @@ svg#mobile-nav-logo {
 // 320px and below (phones)
 @media (max-width: 320px) {
   svg#mobile-nav-logo {
-    max-width: 10rem;
+    max-width: 125px;
     padding: 0rem;
   }
 }

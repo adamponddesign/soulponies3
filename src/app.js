@@ -12,7 +12,7 @@ import About from './components/About'
 import Videos from './components/Videos'
 import Photos from './components/Photos'
 import Testimonials from './components/Testimonials'
-// import MobileNavBar from './components/MobileNavBar'
+import Shows from './components/Shows'
 import Footer from './components/Footer'
 
 import './style.scss'
@@ -71,6 +71,7 @@ class App extends React.Component {
             <Testimonials width={this.state.width}/>
             <Videos width={this.state.width}/>
             <Photos width={this.state.width}/>
+            <Shows width={this.state.width}/>
             <Contact width={this.state.width}/>
             <Footer />
 

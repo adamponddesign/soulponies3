@@ -10,11 +10,6 @@ import Burger from './Burger'
 
 const LandingPage = props => {
 
-  let landingimagesizes = 'https://i.imgur.com/1mVHu4A.jpg'
-
-  if (props.pageWidth < 1025) {
-    landingimagesizes = 'https://i.imgur.com/XajHKSj.jpg'
-  }
 
   return (
 
@@ -29,7 +24,7 @@ const LandingPage = props => {
       </div>
 
 
-      <img id='landing-image' src={landingimagesizes} alt="Image of the Soul Ponies" />
+      <img id='landing-image' src='../img/Soul-Ponies-Peach.jpg' alt="Image of the Soul Ponies" />
     </div>
 
 
@@ -38,6 +33,3 @@ const LandingPage = props => {
 }
 
 export default LandingPage
-
-// smaller sized image
-// https://i.imgur.com/XajHKSj.jpg
