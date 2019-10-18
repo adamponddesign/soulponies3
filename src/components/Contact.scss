@@ -30,6 +30,11 @@ hr {
 
 // between 321px and 600px (mid - phones)
 @media (max-width: 600px) {
+  #email-address {
+    margin: 6px;
+    font-size: 21px;
+
+  }
 
 }
 

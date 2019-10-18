@@ -12,7 +12,7 @@ import About from './components/About'
 import Videos from './components/Videos'
 import Photos from './components/Photos'
 import Testimonials from './components/Testimonials'
-import MobileNavBar from './components/MobileNavBar'
+// import MobileNavBar from './components/MobileNavBar'
 import Footer from './components/Footer'
 
 import './style.scss'
@@ -57,7 +57,6 @@ class App extends React.Component {
       <Router>
         <main>
 
-          <MobileNavBar toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
           <FixedSideNav />
 
           <MobileNav  pageWidth={this.state.width} toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
@@ -67,7 +66,7 @@ class App extends React.Component {
 
 
 
-            <LandingPage />
+            <LandingPage toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
             <About />
             <Testimonials width={this.state.width}/>
             <Videos width={this.state.width}/>
@@ -88,3 +87,8 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 )
+
+
+
+
+// <MobileNavBar toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
