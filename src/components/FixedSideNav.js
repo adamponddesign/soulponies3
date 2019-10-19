@@ -17,7 +17,7 @@ const FixedSideNav = () => {
         <a href='#photos'>Photos</a>
         <a href='#shows'>Shows</a>
         <a href='https://www.instagram.com/soulponiesmusic/' target='_blank' rel='noopener noreferrer'>Instagram</a>
-        <a href='#contact'>Booking Info</a>
+        <a href='#booking-info'>Booking Info</a>
 
       </div>
 

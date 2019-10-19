@@ -1,18 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { HashRouter as Router} from 'react-router-dom'
-
+import { BrowserRouter as Router} from 'react-router-dom'
+import Favicon from 'react-favicon'
 
 import FixedSideNav from './components/FixedSideNav'
-import LandingPage from './components/LandingPage'
-import Contact from './components/Contact'
 import MobileNav from './components/MobileNav'
-import About from './components/About'
 
+import LandingPage from './components/LandingPage'
+import About from './components/About'
+import Testimonials from './components/Testimonials'
 import Videos from './components/Videos'
 import Photos from './components/Photos'
-import Testimonials from './components/Testimonials'
 import Shows from './components/Shows'
+import BookingInfo from './components/BookingInfo'
 import Footer from './components/Footer'
 
 import './style.scss'
@@ -25,12 +25,14 @@ class App extends React.Component {
     height: 0
   }
 
+  // to operate the burger button
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen }
     })
   }
 
+  // to gain info on window size within state object
   componentDidMount = () => {
     this.updateWindowDimensions()
     window.addEventListener('resize', this.updateWindowDimensions)
@@ -40,6 +42,7 @@ class App extends React.Component {
     window.removeEventListener('resize', this.updateWindowDimensions)
   }
 
+  // if user has mobile nav open and page size increases over 1025 then the mobile nav will automatically close
   updateWindowDimensions = () => {
     this.setState({ width: window.innerWidth, height: window.innerHeight })
     if (this.state.width >= 1025) {
@@ -48,36 +51,23 @@ class App extends React.Component {
   }
 
 
-
-
   render() {
-
-
     return (
       <Router>
         <main>
-
+          <Favicon url="./img/soulponiesfavicon.jpg" />
           <FixedSideNav />
-
-          <MobileNav  pageWidth={this.state.width} toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
-
+          <MobileNav toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
           <div>
-
-
-
-
-            <LandingPage pageWidth={this.state.width} toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
+            <LandingPage toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
             <About />
-            <Testimonials width={this.state.width}/>
-            <Videos width={this.state.width}/>
-            <Photos width={this.state.width}/>
-            <Shows width={this.state.width}/>
-            <Contact width={this.state.width}/>
+            <Testimonials />
+            <Videos />
+            <Photos />
+            <Shows />
+            <BookingInfo/>
             <Footer />
-
-
           </div>
-
         </main>
       </Router>
     )
@@ -88,8 +78,3 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 )
-
-
-
-
-// <MobileNavBar toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>

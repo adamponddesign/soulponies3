@@ -25,7 +25,7 @@ const MobileNav = props => {
         <a href='#photos' onClick={props.toggleSideBar}>Photos</a>
         <a href='#shows' onClick={props.toggleSideBar}>Shows</a>
         <a href='https://www.instagram.com/soulponiesmusic/' target='_blank' rel='noopener noreferrer'>Instagram</a>
-        <a href='#contact' onClick={props.toggleSideBar}>Booking Info</a>
+        <a href='#booking-info' onClick={props.toggleSideBar}>Booking Info</a>
       </nav>
     </div>
   )

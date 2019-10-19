@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/app.js',
@@ -16,9 +17,13 @@ module.exports = {
       { test: /\.s(a|c)ss$/, loader: ['style-loader', 'css-loader', 'sass-loader'] },
       { test: /\.svg$/, loader: 'svg-inline-loader'},
       {
-        test: /\.(otf|ttf|eot|woff|woff2)$/,
-        loader: 'file-loader',
-        options: { name: '[name].[ext]' }
+        test: /\.(jpe?g|png|gif)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: './img/[name].[ext]'
+          }
+        }
       }
     ]
   },
@@ -31,6 +36,9 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new CopyWebpackPlugin([
+      { from: 'src/img', to: 'img' }
+    ]),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       filename: 'index.html',

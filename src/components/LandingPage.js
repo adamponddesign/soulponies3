@@ -6,14 +6,14 @@ import SVG from 'react-inlinesvg'
 import Burger from './Burger'
 
 
-
+import LandingImage from '../img/Soul-Ponies-Peach.jpg'
 
 const LandingPage = props => {
 
 
   return (
 
-    <div id='/' className='landingPage-container'>
+    <div id='/'>
       <div className='navbar-background'>
         <div className='nav-burger-background'>
           <Burger toggleSideBar={props.toggleSideBar} status={props.status}/>
@@ -24,7 +24,7 @@ const LandingPage = props => {
       </div>
 
 
-      <img id='landing-image' src='../img/Soul-Ponies-Peach.jpg' alt="Image of the Soul Ponies" />
+      <img id='landing-image' src={LandingImage} alt='Image of the Soul Ponies' />
     </div>
 
 
