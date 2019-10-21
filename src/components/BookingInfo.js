@@ -16,6 +16,8 @@ const BookingInfo = () => {
         <hr />
         <p>For more information and availability please contact</p>
         <p id='email-address'>info@soulponies.co.uk</p>
+        <a id='email-now-button' href='mailto:info@soulponies.co.uk?subject=Soul%20Ponies%20Enquiry&body=Line Up:%20(Duo/Trio/Quartet)%0D%0AEvent%20Date:%0D%0AEvent%20Location:%0D%0ANumber%20of%20Guests:' target='_blank' rel='noopener noreferrer'>Send Email Now</a>
+
       </div>
     </div>
   )
