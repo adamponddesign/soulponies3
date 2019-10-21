@@ -49,7 +49,7 @@ const Testimonials = () => {
         <div className='testimonials-column'>
 
           <div className='testimonial'>
-            <p className='testimonial-text'>We&#39;re always excited to have Soul Ponie Duo play for us.  Many of our regular customers ask when they&#39;ll be back!</p>
+            <p className='testimonial-text'>We&#39;re always excited to have Soul Ponies Duo play for us.  Many of our regular customers ask when they&#39;ll be back!</p>
 
             <p className='testimonial-text-venue'>Red Rooster - Shoreditch</p>
             <p className='testimonial-text-date'>Oct 19</p>

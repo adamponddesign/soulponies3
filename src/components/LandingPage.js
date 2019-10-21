@@ -25,6 +25,7 @@ const LandingPage = props => {
 
 
       <img id='landing-image' src={LandingImage} alt='Image of the Soul Ponies' />
+
     </div>
 
 

@@ -58,16 +58,15 @@ class App extends React.Component {
           <Favicon url="./img/soulponiesfavicon.jpg" />
           <FixedSideNav />
           <MobileNav toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
-          <div>
-            <LandingPage toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
-            <About />
-            <Testimonials />
-            <Videos />
-            <Photos />
-            <Shows />
-            <BookingInfo/>
-            <Footer />
-          </div>
+          <LandingPage toggleSideBar={this.drawerToggleClickHandler} status={this.state.sideDrawerOpen}/>
+          <About />
+          <Testimonials />
+          <Videos />
+          <Photos />
+          <Shows />
+          <BookingInfo/>
+          <Footer />
+
         </main>
       </Router>
     )
